@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클로드 코드, 대체 뭔데 이렇게 난리야? — 노모어매뉴얼</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ebook.css">
+</head>
+<body>
+
+<!-- 진행률 표시바 -->
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- 컨트롤 바 -->
+<div class="controls-bar">
+  <button class="control-btn" id="tocToggle" title="목차">☰</button>
+  <span class="page-indicator" id="pageIndicator">1 / 17</span>
+  <div class="controls-right">
+    <button class="control-btn" id="fontDecrease" title="글자 작게">A-</button>
+    <button class="control-btn" id="fontIncrease" title="글자 크게">A+</button>
+    <button class="control-btn" id="themeToggle" title="다크모드">🌙</button>
+  </div>
+</div>
+
+<!-- 목차 사이드바 -->
+<div class="toc-sidebar" id="tocSidebar">
+  <div class="toc-header">
+    <h2>목차</h2>
+    <button class="toc-close" id="tocClose">×</button>
+  </div>
+  <ul class="toc-list">
+    <li><a class="toc-link" href="#" data-page="0">표지</a></li>
+    <li><a class="toc-link" href="#" data-page="1">목차</a></li>
+    <li><a class="toc-link" href="#" data-page="2">Ch1. AI 코딩 도구의 새 시대</a></li>
+    <li><a class="toc-link" href="#" data-page="3">Ch2. Claude Code란?</a></li>
+    <li><a class="toc-link" href="#" data-page="4">Ch2. Claude Code 작동 방식</a></li>
+    <li><a class="toc-link" href="#" data-page="5">Ch3. 핵심 특징 5가지</a></li>
+    <li><a class="toc-link" href="#" data-page="6">Ch3. 특징 상세</a></li>
+    <li><a class="toc-link" href="#" data-page="7">Ch4. Claude Cowork란?</a></li>
+    <li><a class="toc-link" href="#" data-page="8">Ch4. Cowork 활용 사례</a></li>
+    <li><a class="toc-link" href="#" data-page="9">Ch5. AI 도구 비교</a></li>
+    <li><a class="toc-link" href="#" data-page="10">Ch6. 유튜버 활용법</a></li>
+    <li><a class="toc-link" href="#" data-page="11">Ch7. 직장인 활용법</a></li>
+    <li><a class="toc-link" href="#" data-page="12">Ch8. 1인 창업자 활용법</a></li>
+    <li><a class="toc-link" href="#" data-page="13">Ch9. 수노 음원 제작자 활용법</a></li>
+    <li><a class="toc-link" href="#" data-page="14">Ch10. 왜 반드시 써야 하는가 (1)</a></li>
+    <li><a class="toc-link" href="#" data-page="15">Ch10. 왜 반드시 써야 하는가 (2)</a></li>
+    <li><a class="toc-link" href="#" data-page="16">마무리</a></li>
+  </ul>
+</div>
+<div class="toc-overlay" id="tocOverlay"></div>
+
+<!-- 네비게이션 버튼 -->
+<button class="nav-btn nav-prev" id="prevBtn" disabled>◀</button>
+<button class="nav-btn nav-next" id="nextBtn">▶</button>
+
+<!-- ============ 본문 시작 ============ -->
+<div class="book-container">
+
+  <!-- ── PAGE 0: 표지 ── -->
+  <div class="page active page-cover">
+    <div class="cover-content">
+      <p class="cover-subtitle-top">노모어매뉴얼 구독자 전용 가이드</p>
+      <div class="cover-decoration">
+        <span class="cover-line"></span>
+        <span class="cover-diamond">◆</span>
+        <span class="cover-line"></span>
+      </div>
+      <h1 class="cover-title">클로드 코드<span class="cover-title-accent">대체 뭔데 이렇게 난리야?</span></h1>
+      <div class="cover-img-wrapper">
+        <img src="assets/images/cover.png" alt="클로드 코드 입문 가이드 커버" class="cover-image">
+      </div>
+      <p class="cover-description">설치법은 잠깐 접어두세요.<br>이 전자책은 "이게 왜 대단한 건지"를 알려드립니다.</p>
+      <p class="cover-author">노모어매뉴얼</p>
+    </div>
+  </div>
+
+  <!-- ── PAGE 1: 목차 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CONTENTS</span>
+        <h2 class="chapter-title">목차</h2>
+      </div>
+      <ol class="toc-main-list">
+        <li class="toc-item"><a class="toc-page-link" href="#" data-page="2"><span class="toc-chapter-num">01</span><span class="toc-chapter-info"><span class="toc-chapter-title">AI 코딩 도구의 새 시대</span><span class="toc-chapter-desc">왜 지금 모든 사람이 AI 코딩을 이야기할까?</span></span><span class="toc-dots"></span><span class="toc-page-num">3</span></a></li>
+        <li class="toc-item"><a class="toc-page-link" href="#" data-page="3"><span class="toc-chapter-num">02</span><span class="toc-chapter-info"><span class="toc-chapter-title">Claude Code란?</span><span class="toc-chapter-desc">터미널 속 AI 직원, 시키면 알아서 합니다</span></span><span class="toc-dots"></span><span class="toc-page-num">4</span></a></li>
+        <li class="toc-item"><a class="toc-page-link" href="#" data-page="5"><span class="toc-chapter-num">03</span><span class="toc-chapter-info"><span class="toc-chapter-title">핵심 특징 5가지</span><span class="toc-chapter-desc">Claude Code가 특별한 진짜 이유</span></span><span class="toc-dots"></span><span class="toc-page-num">6</span></a></li>
+        <li class="toc-item"><a class="toc-page-link" href="#" data-page="7"><span class="toc-chapter-num">04</span><span class="toc-chapter-info"><span class="toc-chapter-title">Claude Cowork</span><span class="toc-chapter-desc">코딩 없이 AI와 협업하는 방법</span></span><span class="toc-dots"></span><span class="toc-page-num">8</span></a></li>
+        <li class="toc-item"><a class="toc-page-link" href="#" data-page="9"><span class="toc-chapter-num">05</span><span class="toc-chapter-info"><span class="toc-chapter-title">AI 도구 비교</span><span class="toc-chapter-desc">ChatGPT · Gemini · Antigravity · Claude Code</span></span><span class="toc-dots"></span><span class="toc-page-num">10</span></a></li>
+        <li class="toc-item"><a class="toc-page-link" href="#" data-page="10"><span class="toc-chapter-num">06–09</span><span class="toc-chapter-info"><span class="toc-chapter-title">페르소나별 활용법</span><span class="toc-chapter-desc">유튜버 · 직장인 · 1인 창업자 · 수노 음원 제작자</span></span><span class="toc-dots"></span><span class="toc-page-num">11</span></a></li>
+        <li class="toc-item"><a class="toc-page-link" href="#" data-page="14"><span class="toc-chapter-num">10</span><span class="toc-chapter-info"><span class="toc-chapter-title">1인이 반드시 써야 하는 이유</span><span class="toc-chapter-desc">직원 5명 효과를 월 14만원에</span></span><span class="toc-dots"></span><span class="toc-page-num">15</span></a></li>
+      </ol>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>2 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 2: Ch1 — AI 코딩 도구의 새 시대 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 01</span>
+        <h2 class="chapter-title">AI 코딩 도구의 새 시대</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch1.png" alt="AI 코딩의 새 시대" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <p class="slide-big-text">"코딩을 모르는데 AI가 대신 코딩해준다고?"</p>
+            <p>2025년, AI 세상에 조용한 혁명이 일어났습니다. 이제 AI는 <strong>질문에 답하는 수준</strong>을 넘어, <strong>직접 파일을 만들고, 코드를 짜고, 프로그램을 실행</strong>하는 단계에 도달했습니다.</p>
+            <div class="info-box">
+              <div class="info-box-header"><span class="info-icon">💡</span><strong>핵심 포인트</strong></div>
+              <div class="info-box-body">
+                <p>예전: AI에게 "코드 짜줘" → 복사 → 붙여넣기 → 에러 → 다시 질문</p>
+                <p>지금: AI에게 "이거 만들어줘" → <strong>AI가 알아서 완성</strong></p>
+              </div>
+            </div>
+            <p>그 중심에 <strong>Claude Code</strong>가 있습니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>3 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 3: Ch2 — Claude Code란? ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 02</span>
+        <h2 class="chapter-title">Claude Code란?</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch2.png" alt="Claude Code 개념" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <p>Claude Code는 <strong>터미널(명령창)에서 작동하는 AI 코딩 에이전트</strong>입니다.</p>
+            <div class="styled-quote">
+              <p>쉽게 비유하면? 여러분의 컴퓨터에 상주하는 "AI 개발자 직원"입니다. 시키면 알아서 파일을 읽고, 코드를 짜고, 실행까지 해줍니다.</p>
+            </div>
+            <h3>기존 AI 챗봇과 뭐가 다른가요?</h3>
+            <div class="command-table">
+              <table>
+                <tr><th>구분</th><th>기존 AI 챗봇</th><th>Claude Code</th></tr>
+                <tr><td>작동 방식</td><td>대화창에서 답변</td><td>컴퓨터에서 직접 작업</td></tr>
+                <tr><td>결과물</td><td>텍스트 복사 필요</td><td>파일이 바로 생성됨</td></tr>
+                <tr><td>에러 처리</td><td>사용자가 직접 수정</td><td>AI가 스스로 감지·수정</td></tr>
+                <tr><td>작업 범위</td><td>한 번에 한 질문</td><td>프로젝트 전체를 이해</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>4 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 4: Ch2 — Claude Code 작동 방식 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 02</span>
+        <h2 class="chapter-title">Claude Code는 이렇게 일합니다</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="body-text">
+        <p class="slide-big-text">한마디로 "지시하면, 완성합니다."</p>
+        <div class="step-box">
+          <span class="step-number">1</span>
+          <div class="step-content"><p><strong>프로젝트 전체를 파악합니다</strong> — 폴더 안의 모든 파일을 읽고 구조를 이해합니다. 마치 새로 입사한 직원이 코드베이스를 통째로 파악하는 것과 같습니다.</p></div>
+        </div>
+        <div class="step-box">
+          <span class="step-number">2</span>
+          <div class="step-content"><p><strong>계획을 세웁니다</strong> — "이 기능을 추가하려면 어떤 파일을 수정해야 하지?"를 스스로 판단합니다.</p></div>
+        </div>
+        <div class="step-box">
+          <span class="step-number">3</span>
+          <div class="step-content"><p><strong>직접 실행합니다</strong> — 파일 생성, 코드 수정, 테스트 실행, 에러 수정까지 자동으로 처리합니다.</p></div>
+        </div>
+        <div class="step-box">
+          <span class="step-number">4</span>
+          <div class="step-content"><p><strong>결과를 보고합니다</strong> — 무엇을 했고, 왜 그렇게 했는지 설명해줍니다.</p></div>
+        </div>
+        <div class="info-box highlight-box">
+          <div class="info-box-header"><span class="info-icon">⭐</span><strong>비유로 이해하기</strong></div>
+          <div class="info-box-body">
+            <p>ChatGPT = 똑똑한 상담사 (물어보면 답해줌)</p>
+            <p>Claude Code = 유능한 직원 (시키면 알아서 해옴)</p>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>5 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 5: Ch3 — 핵심 특징 5가지 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 03</span>
+        <h2 class="chapter-title">핵심 특징 5가지</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch3.png" alt="핵심 특징 5가지" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <p>Claude Code가 다른 AI 도구와 확실히 다른 <strong>5가지 핵심 능력</strong>입니다.</p>
+            <div class="command-table">
+              <table>
+                <tr><th>#</th><th>특징</th><th>쉬운 비유</th></tr>
+                <tr><td>1</td><td><strong>자율 실행</strong></td><td>시키면 혼자서 끝까지 해옴</td></tr>
+                <tr><td>2</td><td><strong>초대형 컨텍스트</strong></td><td>책 한 권 분량을 한번에 이해</td></tr>
+                <tr><td>3</td><td><strong>멀티파일 작업</strong></td><td>파일 10개를 동시에 수정</td></tr>
+                <tr><td>4</td><td><strong>보안 스캔</strong></td><td>취약점을 자동으로 찾아냄</td></tr>
+                <tr><td>5</td><td><strong>리모트 컨트롤</strong></td><td>폰으로도 작업 지시 가능</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>6 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 6: Ch3 — 특징 상세 ── -->
+  <div class="page">
+    <div class="page-inner" style="padding: 1.2rem 2rem; line-height: 1.3;">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 03</span>
+        <h2 class="chapter-title">특징을 좀 더 자세히 보면</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="body-text">
+        <h3>🔄 자율 실행 — "시키면 끝까지"</h3>
+        <p style="font-size:0.82rem;margin-bottom:0.4em;">다른 AI는 코드를 "알려만" 줍니다. Claude Code는 직접 파일을 만들고, 수정하고, 테스트까지 돌립니다. 에러가 나면? 스스로 고칩니다.</p>
+        <h3>📚 초대형 컨텍스트 — "작업 책상이 넓다"</h3>
+        <p style="font-size:0.82rem;margin-bottom:0.4em;">AI의 "작업 책상" 크기를 컨텍스트라고 합니다. Claude Code는 업계 최대 수준이라 큰 프로젝트도 한번에 파악합니다.</p>
+        <h3>📁 멀티파일 작업 — "동시에 여러 파일을"</h3>
+        <p style="font-size:0.82rem;margin-bottom:0.4em;">HTML, CSS, JavaScript 파일을 한꺼번에 수정해야 할 때, 하나하나 복사·붙여넣기 할 필요 없이 한번에 처리합니다.</p>
+        <h3>🛡️ 보안 스캔 — "구멍을 미리 찾아줌"</h3>
+        <p style="font-size:0.82rem;margin-bottom:0.4em;">2026년 새로 추가된 기능입니다. 코드에 보안 취약점이 있으면 자동으로 발견하고 수정 방법을 알려줍니다.</p>
+        <h3>📱 리모트 컨트롤 — "폰으로 지시"</h3>
+        <p style="font-size:0.82rem;margin-bottom:0.4em;">집 PC에서 작업 중이던 세션을, 외출 중에 스마트폰으로 이어서 지시할 수 있습니다.</p>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>7 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 7: Ch4 — Claude Cowork란? ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 04</span>
+        <h2 class="chapter-title">Claude Cowork — 코딩 없이 AI와 협업</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch4.png" alt="Claude Cowork" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <p class="slide-big-text">"코딩은 모르지만 AI 직원은 갖고 싶다면?"</p>
+            <p><strong>Claude Cowork</strong>는 Claude 데스크톱 앱 안에서 작동하는 AI 생산성 플랫폼입니다. 코딩 없이도 다양한 업무를 AI와 함께 처리할 수 있습니다.</p>
+            <div class="info-box">
+              <div class="info-box-header"><span class="info-icon">🔌</span><strong>엔터프라이즈 플러그인</strong></div>
+              <div class="info-box-body">
+                <p>Google Drive, Gmail, DocuSign 등 13개 이상의 업무 도구와 직접 연결됩니다.</p>
+              </div>
+            </div>
+            <div class="styled-quote">
+              <p>비유하면? Claude Code가 "코딩하는 직원"이라면, Cowork는 "사무 업무를 도와주는 비서"입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>8 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 8: Ch4 — Cowork 활용 사례 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 04</span>
+        <h2 class="chapter-title">Cowork로 이런 일이 가능합니다</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="body-text">
+        <p>Claude Cowork는 여러 앱을 <strong>넘나들며 자동으로 업무를 처리</strong>합니다.</p>
+        <div class="step-box">
+          <span class="step-number">1</span>
+          <div class="step-content"><p><strong>이메일 → 보고서 자동 생성</strong> — Gmail에서 이번 주 메일을 읽고, 핵심 내용을 요약해서 Google Docs에 보고서로 작성합니다.</p></div>
+        </div>
+        <div class="step-box">
+          <span class="step-number">2</span>
+          <div class="step-content"><p><strong>엑셀 → 프레젠테이션 변환</strong> — 매출 데이터 엑셀 파일을 분석하고, 차트와 함께 프레젠테이션 슬라이드를 자동 생성합니다.</p></div>
+        </div>
+        <div class="step-box">
+          <span class="step-number">3</span>
+          <div class="step-content"><p><strong>계약서 검토 + 서명 요청</strong> — 계약서 PDF를 검토하고, 수정사항을 표시한 뒤 DocuSign으로 서명 요청까지 보냅니다.</p></div>
+        </div>
+        <div class="info-box highlight-box">
+          <div class="info-box-header"><span class="info-icon">💡</span><strong>핵심 포인트</strong></div>
+          <div class="info-box-body">
+            <p>Claude Code = <strong>코딩 작업</strong> 자동화</p>
+            <p>Claude Cowork = <strong>사무 업무</strong> 자동화</p>
+            <p>둘 다 합치면? 거의 모든 디지털 업무를 AI가 처리합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>9 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 9: Ch5 — AI 도구 비교 ── -->
+  <div class="page">
+    <div class="page-inner" style="padding: 1.2rem 2rem; line-height: 1.3;">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 05</span>
+        <h2 class="chapter-title">AI 도구 비교 — 뭐가 다른 건가요?</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch5.png" alt="AI 도구 비교" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <div class="command-table">
+              <table>
+                <tr><th>항목</th><th>ChatGPT</th><th>Gemini</th><th>Antigravity</th><th>Claude Code</th></tr>
+                <tr><td><strong>핵심</strong></td><td>물어보는 AI</td><td>검색하는 AI</td><td>클릭하는 AI</td><td>일하는 AI</td></tr>
+                <tr><td><strong>강점</strong></td><td>대화형 만능</td><td>구글 연동</td><td>노코드 웹빌더</td><td>자율 코딩</td></tr>
+                <tr><td><strong>약점</strong></td><td>직접 실행 제한</td><td>코딩 약함</td><td>복잡한 작업 한계</td><td>터미널 기반</td></tr>
+                <tr><td><strong>결과물</strong></td><td>텍스트</td><td>텍스트+검색</td><td>웹페이지</td><td>완성된 프로그램</td></tr>
+              </table>
+            </div>
+            <div class="info-box" style="margin-top:0.5rem;">
+              <div class="info-box-header"><span class="info-icon">🎯</span><strong>한 줄 정리</strong></div>
+              <div class="info-box-body">
+                <p style="font-size:0.82rem;">ChatGPT에게 <strong>물어보고</strong>, Gemini에서 <strong>검색하고</strong>, Antigravity로 <strong>클릭해서 만들고</strong>, Claude Code로 <strong>진짜 프로그램을 만든다</strong>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>10 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 10: Ch6 — 유튜버 활용법 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 06</span>
+        <h2 class="chapter-title">🎬 유튜버라면 이렇게 씁니다</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch6.png" alt="유튜버 활용" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <p>영상 제작에 드는 <strong>반복 작업</strong>을 Claude Code가 대신합니다.</p>
+            <div class="step-box">
+              <span class="step-number">1</span>
+              <div class="step-content"><p><strong>자막 자동 생성</strong> — 영상 스크립트를 넣으면 SRT 자막 파일을 자동으로 만들어 줍니다.</p></div>
+            </div>
+            <div class="step-box">
+              <span class="step-number">2</span>
+              <div class="step-content"><p><strong>썸네일 배치 생성</strong> — "이번 달 영상 10개 썸네일 만들어줘" 한마디면, 템플릿 기반으로 제목만 바꿔서 한번에 생성합니다.</p></div>
+            </div>
+            <div class="step-box">
+              <span class="step-number">3</span>
+              <div class="step-content"><p><strong>영상 설명란 자동화</strong> — 타임스탬프, 해시태그, 관련 링크까지 포함된 설명란을 자동 작성합니다.</p></div>
+            </div>
+            <div class="styled-quote">
+              <p>"편집은 제가, 나머지 잡무는 Claude가 합니다."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>11 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 11: Ch7 — 직장인 활용법 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 07</span>
+        <h2 class="chapter-title">💼 직장인이라면 이렇게 씁니다</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch7.png" alt="직장인 활용" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <p>매일 반복되는 업무를 <strong>자동화</strong>하세요.</p>
+            <div class="step-box">
+              <span class="step-number">1</span>
+              <div class="step-content"><p><strong>엑셀 보고서 자동화</strong> — 매주 같은 포맷의 보고서를 만든다면, 데이터만 넣으면 완성된 보고서를 자동 생성합니다.</p></div>
+            </div>
+            <div class="step-box">
+              <span class="step-number">2</span>
+              <div class="step-content"><p><strong>이메일 요약 비서</strong> — 안 읽은 메일 50통을 분석해서 "오늘 꼭 봐야 할 메일 3통"을 골라줍니다.</p></div>
+            </div>
+            <div class="step-box">
+              <span class="step-number">3</span>
+              <div class="step-content"><p><strong>회의록 정리</strong> — 회의 녹음 텍스트를 넣으면 결정사항, 액션아이템, 담당자별 할일로 자동 정리합니다.</p></div>
+            </div>
+            <div class="styled-quote">
+              <p>"퇴근 시간이 1시간 당겨졌습니다."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>12 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 12: Ch8 — 1인 창업자 활용법 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 08</span>
+        <h2 class="chapter-title">🚀 1인 창업자라면 이렇게 씁니다</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch8.png" alt="1인 창업자 활용" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <p>외주비 수백만원을 <strong>월 14만원</strong>으로 대체하세요.</p>
+            <div class="step-box">
+              <span class="step-number">1</span>
+              <div class="step-content"><p><strong>랜딩페이지 직접 제작</strong> — "이런 느낌으로 만들어줘" 한마디면 반응형 웹사이트를 30분 안에 완성합니다.</p></div>
+            </div>
+            <div class="step-box">
+              <span class="step-number">2</span>
+              <div class="step-content"><p><strong>고객 문의 챗봇</strong> — FAQ 데이터를 주면, 24시간 자동 응답하는 챗봇을 만들어 줍니다.</p></div>
+            </div>
+            <div class="step-box">
+              <span class="step-number">3</span>
+              <div class="step-content"><p><strong>마케팅 자동화 도구</strong> — SNS 예약 발행, 뉴스레터 발송, 고객 데이터 분석까지 자동화합니다.</p></div>
+            </div>
+            <div class="styled-quote">
+              <p>"개발자 없이도, 사장님이 직접 서비스를 만듭니다."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>13 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 13: Ch9 — 수노 음원 제작자 활용법 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 09</span>
+        <h2 class="chapter-title">🎵 수노 음원 제작자라면 이렇게 씁니다</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="slide-two-col">
+        <div class="slide-col-left">
+          <div class="chapter-image-wrapper">
+            <img src="assets/images/ch9.png" alt="수노 음원 제작자 활용" class="chapter-image">
+          </div>
+        </div>
+        <div class="slide-col-right">
+          <div class="body-text">
+            <p>음원 제작의 <strong>귀찮은 과정</strong>을 자동화하세요.</p>
+            <div class="step-box">
+              <span class="step-number">1</span>
+              <div class="step-content"><p><strong>가사 대량 생성</strong> — 장르, 분위기, 키워드를 주면 수노(Suno)에 바로 넣을 수 있는 가사를 50개씩 생성합니다.</p></div>
+            </div>
+            <div class="step-box">
+              <span class="step-number">2</span>
+              <div class="step-content"><p><strong>메타데이터 자동 입력</strong> — 곡 제목, 장르 태그, 앨범 정보, ISRC 코드를 엑셀로 일괄 정리해줍니다.</p></div>
+            </div>
+            <div class="step-box">
+              <span class="step-number">3</span>
+              <div class="step-content"><p><strong>배포 플랫폼 관리</strong> — 유통사별 업로드 양식을 자동으로 맞춰서 배포 준비를 완료합니다.</p></div>
+            </div>
+            <div class="styled-quote">
+              <p>"음악 만들기에만 집중하고, 나머지는 AI가 처리합니다."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>14 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 14: Ch10 — 왜 반드시 써야 하는가 (1) ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 10</span>
+        <h2 class="chapter-title">1인이 반드시 써야 하는 이유</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="body-text">
+        <p class="slide-big-text">"직원 5명 효과를, 월 14만원에."</p>
+        <div class="command-table">
+          <table>
+            <tr><th>항목</th><th>직원 채용</th><th>Claude Code Max</th></tr>
+            <tr><td><strong>월 비용</strong></td><td>200만원+ (4대보험·퇴직금 별도)</td><td>$100 (약 14만원)</td></tr>
+            <tr><td><strong>가능 업무</strong></td><td>1개 직무</td><td>웹개발 + 디자인 + 데이터 + 문서 + 자동화</td></tr>
+            <tr><td><strong>근무 시간</strong></td><td>주 40시간</td><td>24시간 연중무휴</td></tr>
+            <tr><td><strong>병가 / 퇴사</strong></td><td>있음</td><td>없음</td></tr>
+            <tr><td><strong>온보딩</strong></td><td>1~3개월</td><td>즉시 투입</td></tr>
+          </table>
+        </div>
+        <div class="info-box highlight-box">
+          <div class="info-box-header"><span class="info-icon">💰</span><strong>연간 비용 비교</strong></div>
+          <div class="info-box-body">
+            <p>직원 1명 연봉: 최소 2,400만원 + 부대비용</p>
+            <p>Claude Code Max 연간: 약 168만원 (14만원 × 12)</p>
+            <p><strong>절감액: 연 2,200만원 이상</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>15 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 15: Ch10 — 왜 반드시 써야 하는가 (2) ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">CHAPTER 10</span>
+        <h2 class="chapter-title">실전 ROI — 이만큼 아낍니다</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="body-text">
+        <p>코딩을 모르는 사장님이, <strong>코딩하는 직원을 둔 것</strong>과 같습니다.</p>
+        <div class="command-table">
+          <table>
+            <tr><th>작업</th><th>외주 비용</th><th>소요 기간</th><th>Claude Code</th></tr>
+            <tr><td>랜딩페이지 제작</td><td>50~200만원</td><td>1~2주</td><td>30분~2시간</td></tr>
+            <tr><td>관리자 대시보드</td><td>300~500만원</td><td>3~4주</td><td>2~4시간</td></tr>
+            <tr><td>챗봇 개발</td><td>200~400만원</td><td>2~3주</td><td>1~3시간</td></tr>
+            <tr><td>데이터 분석 리포트</td><td>100~200만원</td><td>1주</td><td>10~30분</td></tr>
+          </table>
+        </div>
+        <div class="vs-compare">
+          <div class="vs-box vs-bad">
+            <div class="vs-label">❌ 기존 방식</div>
+            <p>아이디어 → 외주 업체 탐색 → 견적 → 대기 → 수정 요청 → 추가 비용 → 완성 (4~8주)</p>
+          </div>
+          <div class="vs-box vs-good">
+            <div class="vs-label">✅ Claude Code 방식</div>
+            <p>아이디어 → "이거 만들어줘" → 30분 후 완성 → 수정? "이 부분 바꿔줘" → 5분 후 반영</p>
+          </div>
+        </div>
+        <div class="styled-quote">
+          <p>"외주에 200만원 쓸 일을, 14만원 구독료로 해결했습니다. 게다가 매달 무제한으로."</p>
+        </div>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>16 / 17</span></div>
+    </div>
+  </div>
+
+  <!-- ── PAGE 16: 마무리 ── -->
+  <div class="page">
+    <div class="page-inner">
+      <div class="chapter-header">
+        <span class="chapter-label">SUMMARY</span>
+        <h2 class="chapter-title">핵심 요약</h2>
+        <div class="chapter-divider"><span class="divider-ornament">◆</span></div>
+      </div>
+      <div class="body-text">
+        <div class="command-table">
+          <table>
+            <tr><th>이것만 기억하세요</th><th>한 줄 정리</th></tr>
+            <tr><td>Claude Code</td><td>시키면 알아서 코딩하는 AI 직원</td></tr>
+            <tr><td>Claude Cowork</td><td>코딩 없이 사무 업무를 자동화하는 AI 비서</td></tr>
+            <tr><td>가장 큰 강점</td><td>"직접 실행"하는 유일한 AI 에이전트</td></tr>
+            <tr><td>비용</td><td>직원 5명 효과를 월 14만원에</td></tr>
+            <tr><td>누구에게 좋은가</td><td>혼자 일하는 모든 사람</td></tr>
+          </table>
+        </div>
+        <div class="info-box highlight-box" style="margin-top:1rem;">
+          <div class="info-box-header"><span class="info-icon">📌</span><strong>다음 단계</strong></div>
+          <div class="info-box-body">
+            <p>이 전자책은 "왜 써야 하는지"를 설명했습니다.</p>
+            <p>다음 전자책에서는 <strong>설치부터 첫 프로젝트 완성까지</strong> 함께 해보겠습니다.</p>
+            <p>궁금한 점은 노모어매뉴얼 커뮤니티에서 질문해주세요!</p>
+          </div>
+        </div>
+      </div>
+      <div class="ending-decoration">
+        <span>◆ ◆ ◆</span>
+        <p class="ending-text">이 전자책이 도움이 되셨다면, 주변에 공유해주세요.</p>
+        <p class="ending-author">노모어매뉴얼</p>
+      </div>
+      <div class="page-footer"><span>노모어매뉴얼</span><span>17 / 17</span></div>
+    </div>
+  </div>
+
+</div><!-- /book-container -->
+
+<script src="js/ebook.js"></script>
+</body>
+</html>
