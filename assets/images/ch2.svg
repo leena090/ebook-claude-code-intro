@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Background -->
+  <rect width="400" height="320" rx="16" fill="#fdf6ee"/>
+
+  <!-- Large terminal window -->
+  <rect x="30" y="30" width="340" height="200" rx="14" fill="#1e1e2e"/>
+  <rect x="30" y="30" width="340" height="38" rx="14" fill="#313244"/>
+  <rect x="30" y="54" width="340" height="14" fill="#313244"/>
+
+  <!-- Traffic lights -->
+  <circle cx="54" cy="49" r="6" fill="#ff5f57"/>
+  <circle cx="72" cy="49" r="6" fill="#febc2e"/>
+  <circle cx="90" cy="49" r="6" fill="#28c840"/>
+
+  <!-- Title bar text -->
+  <text x="200" y="53" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" fill="#6c7086">Claude Code — Terminal</text>
+
+  <!-- Terminal content -->
+  <text x="50" y="90" font-family="'Fira Code', monospace" font-size="10" fill="#6c7086">~/myproject $</text>
+  <text x="145" y="90" font-family="'Fira Code', monospace" font-size="10" fill="#cdd6f4"> claude</text>
+
+  <text x="50" y="108" font-family="'Fira Code', monospace" font-size="9" fill="#a6e3a1">✓ 프로젝트 구조 파악 중...</text>
+  <text x="50" y="122" font-family="'Fira Code', monospace" font-size="9" fill="#a6e3a1">✓ 파일 12개 분석 완료</text>
+  <text x="50" y="136" font-family="'Fira Code', monospace" font-size="9" fill="#89dceb">→ 무엇을 도와드릴까요?</text>
+
+  <text x="50" y="156" font-family="'Fira Code', monospace" font-size="9" fill="#cba6f7">YOU: 로그인 기능 추가해줘</text>
+
+  <text x="50" y="174" font-family="'Fira Code', monospace" font-size="9" fill="#f9e2af">CLAUDE: 계획을 세웠습니다.</text>
+  <text x="50" y="188" font-family="'Fira Code', monospace" font-size="9" fill="#a6e3a1">  auth.js 생성 → login.html 수정</text>
+  <text x="50" y="202" font-family="'Fira Code', monospace" font-size="9" fill="#a6e3a1">  → DB 연결 → 테스트 실행...</text>
+
+  <!-- Cursor blink -->
+  <rect x="50" y="213" width="8" height="13" rx="1" fill="#cdd6f4" opacity="0.8"/>
+
+  <!-- AI Brain icon (right side) -->
+  <circle cx="310" cy="155" r="32" fill="#d4622b" opacity="0.1" stroke="#d4622b" stroke-width="1.5"/>
+  <circle cx="310" cy="155" r="20" fill="#d4622b" opacity="0.15"/>
+  <!-- Brain waves -->
+  <path d="M296 149 Q303 143 310 149 Q317 155 324 149" stroke="#d4622b" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M296 157 Q303 151 310 157 Q317 163 324 157" stroke="#d4622b" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M296 165 Q303 159 310 165 Q317 171 324 165" stroke="#d4622b" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Connection dots -->
+  <circle cx="280" cy="120" r="3" fill="#d4622b" opacity="0.5"/>
+  <circle cx="290" cy="100" r="2" fill="#d4622b" opacity="0.4"/>
+  <circle cx="330" cy="110" r="3" fill="#d4622b" opacity="0.5"/>
+  <circle cx="345" cy="130" r="2" fill="#d4622b" opacity="0.3"/>
+
+  <!-- Bottom comparison -->
+  <rect x="30" y="245" width="160" height="55" rx="10" fill="#f0e8df" stroke="#c9a882" stroke-width="1"/>
+  <text x="110" y="263" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#7a6050">기존 AI 챗봇</text>
+  <text x="110" y="278" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#9a7060">대화창에서 답변만</text>
+  <text x="110" y="292" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#c07050">직접 실행 ✗</text>
+
+  <text x="200" y="275" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="18" fill="#d4622b">→</text>
+
+  <rect x="210" y="245" width="160" height="55" rx="10" fill="#d4622b" opacity="0.12" stroke="#d4622b" stroke-width="1.5"/>
+  <text x="290" y="263" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#d4622b">Claude Code</text>
+  <text x="290" y="278" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#b85030">컴퓨터에서 직접 작업</text>
+  <text x="290" y="292" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#d4622b">직접 실행 ✓</text>
+</svg>

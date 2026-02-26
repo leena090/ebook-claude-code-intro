@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Background -->
+  <rect width="400" height="320" rx="16" fill="#fdf6ee"/>
+
+  <!-- Title -->
+  <text x="200" y="32" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="13" font-weight="700" fill="#2c2c2c">핵심 특징 5가지</text>
+  <line x1="140" y1="40" x2="260" y2="40" stroke="#d4622b" stroke-width="1.5"/>
+
+  <!-- Feature 1: 자율 실행 -->
+  <rect x="20" y="55" width="170" height="110" rx="12" fill="#fff8f5" stroke="#d4622b" stroke-width="1.5"/>
+  <circle cx="60" cy="90" r="22" fill="#d4622b" opacity="0.12"/>
+  <!-- Play icon -->
+  <polygon points="52,80 52,100 72,90" fill="#d4622b"/>
+  <text x="100" y="82" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2c2c2c">자율 실행</text>
+  <text x="100" y="96" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#5a5a5a">시키면 끝까지</text>
+  <text x="100" y="109" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#5a5a5a">알아서 처리</text>
+  <rect x="30" y="130" width="150" height="24" rx="6" fill="#d4622b" opacity="0.08"/>
+  <text x="105" y="146" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9" fill="#d4622b">실행 → 검증 → 완료</text>
+
+  <!-- Feature 2: 초대형 컨텍스트 -->
+  <rect x="210" y="55" width="170" height="110" rx="12" fill="#fff8f5" stroke="#e8864a" stroke-width="1.5"/>
+  <circle cx="250" cy="90" r="22" fill="#e8864a" opacity="0.12"/>
+  <!-- Book icon -->
+  <rect x="238" y="74" rx="2" width="24" height="30" fill="none" stroke="#e8864a" stroke-width="2"/>
+  <line x1="250" y1="74" x2="250" y2="104" stroke="#e8864a" stroke-width="1.5"/>
+  <line x1="242" y1="82" x2="248" y2="82" stroke="#e8864a" stroke-width="1"/>
+  <line x1="242" y1="88" x2="248" y2="88" stroke="#e8864a" stroke-width="1"/>
+  <line x1="252" y1="82" x2="260" y2="82" stroke="#e8864a" stroke-width="1"/>
+  <line x1="252" y1="88" x2="260" y2="88" stroke="#e8864a" stroke-width="1"/>
+  <text x="290" y="82" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2c2c2c">초대형 컨텍스트</text>
+  <text x="290" y="96" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#5a5a5a">책 한 권 분량을</text>
+  <text x="290" y="109" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#5a5a5a">한번에 이해</text>
+  <rect x="220" y="130" width="150" height="24" rx="6" fill="#e8864a" opacity="0.08"/>
+  <text x="295" y="146" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9" fill="#e8864a">200K+ tokens</text>
+
+  <!-- Feature 3: 멀티파일 -->
+  <rect x="20" y="178" width="110" height="120" rx="12" fill="#fff8f5" stroke="#4a90d9" stroke-width="1.5"/>
+  <circle cx="75" cy="210" r="18" fill="#4a90d9" opacity="0.12"/>
+  <!-- Files icon -->
+  <rect x="65" y="198" rx="2" width="14" height="18" fill="none" stroke="#4a90d9" stroke-width="1.5"/>
+  <rect x="71" y="202" rx="2" width="14" height="18" fill="#fff8f5" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="75" y="232" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#2c2c2c">멀티파일</text>
+  <text x="75" y="246" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">동시 여러 파일</text>
+  <text x="75" y="258" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">수정 가능</text>
+  <rect x="30" y="272" width="90" height="18" rx="5" fill="#4a90d9" opacity="0.1"/>
+  <text x="75" y="284" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#4a90d9">html+css+js</text>
+
+  <!-- Feature 4: 보안 스캔 -->
+  <rect x="145" y="178" width="110" height="120" rx="12" fill="#fff8f5" stroke="#28c840" stroke-width="1.5"/>
+  <circle cx="200" cy="210" r="18" fill="#28c840" opacity="0.12"/>
+  <!-- Shield icon -->
+  <path d="M200 196 L212 202 L212 214 Q212 222 200 226 Q188 222 188 214 L188 202 Z" fill="none" stroke="#28c840" stroke-width="2"/>
+  <path d="M194 212 L198 216 L207 207" stroke="#28c840" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="232" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#2c2c2c">보안 스캔</text>
+  <text x="200" y="246" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">취약점 자동</text>
+  <text x="200" y="258" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">감지·수정</text>
+  <rect x="155" y="272" width="90" height="18" rx="5" fill="#28c840" opacity="0.1"/>
+  <text x="200" y="284" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#28c840">auto-scan</text>
+
+  <!-- Feature 5: 리모트 컨트롤 -->
+  <rect x="270" y="178" width="110" height="120" rx="12" fill="#fff8f5" stroke="#cba6f7" stroke-width="1.5"/>
+  <circle cx="325" cy="210" r="18" fill="#cba6f7" opacity="0.12"/>
+  <!-- Phone icon -->
+  <rect x="317" y="196" rx="3" width="16" height="28" fill="none" stroke="#cba6f7" stroke-width="2"/>
+  <circle cx="325" cy="220" r="2" fill="#cba6f7"/>
+  <!-- WiFi waves -->
+  <path d="M319 200 Q325 196 331 200" stroke="#cba6f7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M316 196 Q325 190 334 196" stroke="#cba6f7" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <text x="325" y="232" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#2c2c2c">리모트 컨트롤</text>
+  <text x="325" y="246" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">폰으로도</text>
+  <text x="325" y="258" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">작업 지시</text>
+  <rect x="280" y="272" width="90" height="18" rx="5" fill="#cba6f7" opacity="0.1"/>
+  <text x="325" y="284" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#cba6f7">anywhere</text>
+</svg>

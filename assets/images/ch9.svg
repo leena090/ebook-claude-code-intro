@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Background -->
+  <rect width="400" height="320" rx="16" fill="#fdf6ee"/>
+
+  <!-- Waveform background decoration -->
+  <path d="M0 160 Q20 130 40 160 Q60 190 80 160 Q100 130 120 160 Q140 190 160 160 Q180 130 200 160 Q220 190 240 160 Q260 130 280 160 Q300 190 320 160 Q340 130 360 160 Q380 190 400 160" stroke="#d4622b" stroke-width="1" fill="none" opacity="0.08"/>
+  <path d="M0 160 Q20 120 40 160 Q60 200 80 160 Q100 120 120 160 Q140 200 160 160 Q180 120 200 160 Q220 200 240 160 Q260 120 280 160 Q300 200 320 160 Q340 120 360 160 Q380 200 400 160" stroke="#d4622b" stroke-width="1.5" fill="none" opacity="0.06"/>
+
+  <!-- Title -->
+  <text x="200" y="24" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2c2c2c">🎵 수노 음원 제작자 자동화</text>
+
+  <!-- Input: Theme idea -->
+  <rect x="20" y="42" width="100" height="60" rx="10" fill="#fff8f5" stroke="#cba6f7" stroke-width="1.5"/>
+  <text x="70" y="62" text-anchor="middle" font-size="20">🎼</text>
+  <text x="70" y="78" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" font-weight="700" fill="#9263c8">아이디어</text>
+  <text x="70" y="90" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">장르+분위기</text>
+  <text x="70" y="101" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">키워드 입력</text>
+
+  <!-- Arrow 1 -->
+  <path d="M126 72 L154 72" stroke="#d4622b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M150 67 L156 72 L150 77" stroke="#d4622b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Claude processing -->
+  <rect x="160" y="42" width="80" height="60" rx="10" fill="#1e1e2e" stroke="#d4622b" stroke-width="1.5"/>
+  <text x="200" y="62" text-anchor="middle" font-size="16">🤖</text>
+  <text x="200" y="77" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9" fill="#cdd6f4">Claude</text>
+  <text x="200" y="90" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#a6e3a1">처리 중...</text>
+  <!-- Dots animation style -->
+  <circle cx="192" cy="96" r="2" fill="#d4622b"/>
+  <circle cx="200" cy="96" r="2" fill="#d4622b" opacity="0.7"/>
+  <circle cx="208" cy="96" r="2" fill="#d4622b" opacity="0.4"/>
+
+  <!-- Arrow 2 -->
+  <path d="M246 72 L274 72" stroke="#d4622b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M270 67 L276 72 L270 77" stroke="#d4622b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Output: Lyrics batch -->
+  <rect x="280" y="42" width="100" height="60" rx="10" fill="#fff8f5" stroke="#a6e3a1" stroke-width="1.5"/>
+  <text x="330" y="57" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" font-weight="700" fill="#2e7d32">가사 50개</text>
+  <text x="330" y="70" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#888">lyrics_01.txt</text>
+  <text x="330" y="81" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#888">lyrics_02.txt</text>
+  <text x="330" y="92" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#888">...</text>
+  <text x="330" y="103" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#2e7d32">수노 즉시 활용</text>
+
+  <!-- Section 2: Metadata automation -->
+  <rect x="20" y="122" width="360" height="88" rx="12" fill="#fff8f5" stroke="#f9c74f" stroke-width="1.5"/>
+  <rect x="20" y="122" width="360" height="28" rx="12" fill="#f9c74f" opacity="0.15"/>
+  <rect x="20" y="138" width="360" height="12" fill="#f9c74f" opacity="0.15"/>
+  <text x="200" y="140" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#c08820">📋 메타데이터 자동 정리</text>
+
+  <!-- Spreadsheet style -->
+  <rect x="30" y="156" width="340" height="46" rx="6" fill="white" opacity="0.7"/>
+  <!-- Headers -->
+  <rect x="30" y="156" width="340" height="14" rx="6" fill="#f9c74f" opacity="0.3"/>
+  <text x="90" y="166" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#888">곡 제목</text>
+  <text x="175" y="166" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#888">장르 태그</text>
+  <text x="255" y="166" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#888">ISRC 코드</text>
+  <text x="340" y="166" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#888">유통사</text>
+  <line x1="130" y1="156" x2="130" y2="202" stroke="#f0e0a0" stroke-width="0.5"/>
+  <line x1="220" y1="156" x2="220" y2="202" stroke="#f0e0a0" stroke-width="0.5"/>
+  <line x1="295" y1="156" x2="295" y2="202" stroke="#f0e0a0" stroke-width="0.5"/>
+  <!-- Row 1 -->
+  <text x="90" y="178" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#2c2c2c">Summer Vibe</text>
+  <text x="175" y="178" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#2c2c2c">Pop, Upbeat</text>
+  <text x="255" y="178" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#2c2c2c">KR-A001-25-0001</text>
+  <text x="340" y="178" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#2c2c2c">Distrokid</text>
+  <!-- Row 2 -->
+  <text x="90" y="192" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#2c2c2c">Midnight Jazz</text>
+  <text x="175" y="192" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#2c2c2c">Jazz, Calm</text>
+  <text x="255" y="192" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#2c2c2c">KR-A001-25-0002</text>
+  <text x="340" y="192" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#2c2c2c">TuneCore</text>
+
+  <!-- Section 3: Distribution flow -->
+  <rect x="20" y="225" width="360" height="78" rx="12" fill="#fff8f5" stroke="#89dceb" stroke-width="1.5"/>
+  <text x="200" y="244" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#1e90c8">🎧 배포 플랫폼 자동 준비</text>
+
+  <!-- Platform icons -->
+  <circle cx="75" cy="268" r="20" fill="#1db954" opacity="0.15" stroke="#1db954" stroke-width="1.5"/>
+  <text x="75" y="272" text-anchor="middle" font-size="14">🎵</text>
+  <text x="75" y="287" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#1db954">Spotify</text>
+
+  <circle cx="145" cy="268" r="20" fill="#ff2d55" opacity="0.15" stroke="#ff2d55" stroke-width="1.5"/>
+  <text x="145" y="272" text-anchor="middle" font-size="14">🎼</text>
+  <text x="145" y="287" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#ff2d55">Apple</text>
+
+  <circle cx="215" cy="268" r="20" fill="#ff0000" opacity="0.15" stroke="#ff0000" stroke-width="1.5"/>
+  <text x="215" y="272" text-anchor="middle" font-size="14">▶️</text>
+  <text x="215" y="287" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#ff0000">YouTube</text>
+
+  <circle cx="285" cy="268" r="20" fill="#fc3c44" opacity="0.15" stroke="#fc3c44" stroke-width="1.5"/>
+  <text x="285" y="272" text-anchor="middle" font-size="14">🎤</text>
+  <text x="285" y="287" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#fc3c44">SoundCloud</text>
+
+  <circle cx="355" cy="268" r="20" fill="#d4622b" opacity="0.15" stroke="#d4622b" stroke-width="1.5"/>
+  <text x="355" y="272" text-anchor="middle" font-size="14">+</text>
+  <text x="355" y="287" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#d4622b">...더보기</text>
+
+  <text x="200" y="300" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#1e90c8">각 플랫폼 양식 자동 변환 → 업로드 준비 완료</text>
+</svg>

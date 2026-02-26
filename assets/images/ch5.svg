@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Background -->
+  <rect width="400" height="320" rx="16" fill="#fdf6ee"/>
+
+  <!-- Title -->
+  <text x="200" y="24" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2c2c2c">AI 도구 비교</text>
+
+  <!-- Column headers -->
+  <rect x="18" y="35" width="88" height="36" rx="8" fill="#f0e8df"/>
+  <text x="62" y="51" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#7a6050">ChatGPT</text>
+  <text x="62" y="64" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#9a8070">물어보는 AI</text>
+
+  <rect x="112" y="35" width="88" height="36" rx="8" fill="#e8f0fe"/>
+  <text x="156" y="51" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#1a5fb4">Gemini</text>
+  <text x="156" y="64" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#4a90d9">검색하는 AI</text>
+
+  <rect x="206" y="35" width="88" height="36" rx="8" fill="#e8f5e9"/>
+  <text x="250" y="51" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2e7d32">Cursor</text>
+  <text x="250" y="64" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#4caf50">IDE 기반 AI</text>
+
+  <rect x="300" y="35" width="84" height="36" rx="8" fill="#d4622b" opacity="0.15" stroke="#d4622b" stroke-width="1.5"/>
+  <text x="342" y="51" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#d4622b">Claude Code</text>
+  <text x="342" y="64" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#b85030">일하는 AI</text>
+
+  <!-- Row: 결과물 -->
+  <rect x="18" y="80" width="366" height="32" rx="6" fill="#f8f4f0"/>
+  <text x="200" y="89" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#888">결과물</text>
+  <text x="62" y="100" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#7a6050">텍스트</text>
+  <text x="156" y="100" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#4a90d9">텍스트+검색</text>
+  <text x="250" y="100" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#4caf50">코드 제안</text>
+  <text x="342" y="100" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" font-weight="700" fill="#d4622b">완성 프로그램</text>
+
+  <!-- Row: 파일 수정 -->
+  <rect x="18" y="118" width="366" height="32" rx="6" fill="#fdfbf8"/>
+  <text x="200" y="127" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#888">파일 직접 수정</text>
+  <text x="62" y="138" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#c0705a">✗</text>
+  <text x="156" y="138" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#c0705a">✗</text>
+  <text x="250" y="138" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#f9c74f">△</text>
+  <text x="342" y="138" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#28c840">✓</text>
+
+  <!-- Row: 자율 에이전트 -->
+  <rect x="18" y="156" width="366" height="32" rx="6" fill="#f8f4f0"/>
+  <text x="200" y="165" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#888">자율 에이전트</text>
+  <text x="62" y="176" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#c0705a">✗</text>
+  <text x="156" y="176" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#c0705a">✗</text>
+  <text x="250" y="176" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#c0705a">✗</text>
+  <text x="342" y="176" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#28c840">✓</text>
+
+  <!-- Row: 에러 자동 수정 -->
+  <rect x="18" y="194" width="366" height="32" rx="6" fill="#fdfbf8"/>
+  <text x="200" y="203" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#888">에러 자동 수정</text>
+  <text x="62" y="214" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#c0705a">✗</text>
+  <text x="156" y="214" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#c0705a">✗</text>
+  <text x="250" y="214" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#f9c74f">△</text>
+  <text x="342" y="214" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#28c840">✓</text>
+
+  <!-- Highlight column for Claude Code -->
+  <rect x="300" y="35" width="84" height="192" rx="8" fill="#d4622b" opacity="0.05" stroke="#d4622b" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Bottom summary -->
+  <rect x="18" y="236" width="366" height="68" rx="10" fill="#d4622b" opacity="0.08" stroke="#d4622b" stroke-width="1.5"/>
+  <text x="200" y="256" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#d4622b">🎯 결론</text>
+  <text x="200" y="272" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#5a5a5a">ChatGPT로 물어보고, Gemini에서 검색하고,</text>
+  <text x="200" y="287" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#5a5a5a">Claude Code로 <tspan font-weight="700" fill="#d4622b">진짜 프로그램을 만든다.</tspan></text>
+  <text x="200" y="297" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">* Antigravity(노코드 빌더)는 지면상 생략</text>
+</svg>

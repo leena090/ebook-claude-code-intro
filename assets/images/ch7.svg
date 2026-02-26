@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Background -->
+  <rect width="400" height="320" rx="16" fill="#fdf6ee"/>
+
+  <!-- Title -->
+  <text x="200" y="24" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2c2c2c">💼 직장인 업무 자동화</text>
+
+  <!-- Before state: messy inbox -->
+  <rect x="20" y="38" width="160" height="130" rx="12" fill="#fff8f5" stroke="#c9a882" stroke-width="1.5"/>
+  <rect x="20" y="38" width="160" height="28" rx="12" fill="#f0e8df"/>
+  <rect x="20" y="56" width="160" height="10" fill="#f0e8df"/>
+  <text x="100" y="56" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#7a6050">📬 받은 메일함</text>
+
+  <!-- Email items -->
+  <rect x="30" y="74" width="140" height="18" rx="4" fill="#f5e8da"/>
+  <text x="38" y="87" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">📧 [긴급] 월간 보고서 제출...</text>
+  <rect x="30" y="96" width="140" height="18" rx="4" fill="#f5e8da"/>
+  <text x="38" y="109" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">📧 Re: 미팅 자료 요청 건...</text>
+  <rect x="30" y="118" width="140" height="18" rx="4" fill="#f5e8da"/>
+  <text x="38" y="131" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">📧 [스팸] 특별 할인 안내...</text>
+  <rect x="30" y="140" width="140" height="18" rx="4" fill="#f5e8da"/>
+  <text x="38" y="153" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#5a5a5a">📧 팀장님 피드백 내용...</text>
+  <text x="100" y="175" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#c0705a">50통 미확인</text>
+
+  <!-- Arrow + Claude -->
+  <path d="M188 103 L212 103" stroke="#d4622b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M207 97 L215 103 L207 109" stroke="#d4622b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="200" cy="103" r="0" fill="none"/>
+  <text x="200" y="95" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#d4622b">Claude</text>
+
+  <!-- After state: organized report -->
+  <rect x="220" y="38" width="160" height="130" rx="12" fill="#fff8f5" stroke="#d4622b" stroke-width="1.5"/>
+  <rect x="220" y="38" width="160" height="28" rx="12" fill="#d4622b" opacity="0.1"/>
+  <rect x="220" y="56" width="160" height="10" fill="#d4622b" opacity="0.1"/>
+  <text x="300" y="56" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" font-weight="700" fill="#d4622b">✅ 오늘의 우선순위</text>
+  <rect x="230" y="74" width="140" height="22" rx="6" fill="#d4622b" opacity="0.12"/>
+  <text x="238" y="83" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#d4622b">🔴 월간 보고서 → 오늘 마감</text>
+  <text x="238" y="93" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#888">담당: 나 / 기한: 오늘 18시</text>
+  <rect x="230" y="100" width="140" height="22" rx="6" fill="#f9c74f" opacity="0.15"/>
+  <text x="238" y="109" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#c08820">🟡 미팅 자료 → 내일까지</text>
+  <text x="238" y="119" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#888">담당: 팀원 / 검토만 필요</text>
+  <rect x="230" y="126" width="140" height="18" rx="6" fill="#e8f5e9"/>
+  <text x="238" y="139" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#2e7d32">🟢 스팸 2통 자동 삭제 완료</text>
+  <text x="300" y="165" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" font-weight="700" fill="#28c840">분석 완료 (3초)</text>
+
+  <!-- Excel automation -->
+  <rect x="20" y="184" width="160" height="116" rx="12" fill="#fff8f5" stroke="#0f9d58" stroke-width="1.5"/>
+  <rect x="20" y="184" width="160" height="26" rx="12" fill="#0f9d58" opacity="0.1"/>
+  <rect x="20" y="200" width="160" height="10" fill="#0f9d58" opacity="0.1"/>
+  <text x="100" y="200" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" font-weight="700" fill="#0f9d58">📊 엑셀 보고서 자동화</text>
+  <!-- Mini spreadsheet -->
+  <rect x="30" y="216" width="140" height="76" rx="4" fill="#f0fff0"/>
+  <line x1="30" y1="228" x2="170" y2="228" stroke="#0f9d58" stroke-width="0.5" opacity="0.5"/>
+  <line x1="30" y1="240" x2="170" y2="240" stroke="#0f9d58" stroke-width="0.5" opacity="0.5"/>
+  <line x1="30" y1="252" x2="170" y2="252" stroke="#0f9d58" stroke-width="0.5" opacity="0.5"/>
+  <line x1="75" y1="216" x2="75" y2="292" stroke="#0f9d58" stroke-width="0.5" opacity="0.5"/>
+  <line x1="120" y1="216" x2="120" y2="292" stroke="#0f9d58" stroke-width="0.5" opacity="0.5"/>
+  <text x="52" y="225" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#888">항목</text>
+  <text x="97" y="225" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#888">이번 달</text>
+  <text x="144" y="225" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#888">전월 대비</text>
+  <text x="52" y="237" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#2c2c2c">매출</text>
+  <text x="97" y="237" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#2c2c2c">₩12.3M</text>
+  <text x="144" y="237" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#0f9d58">▲8.2%</text>
+  <text x="52" y="249" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#2c2c2c">비용</text>
+  <text x="97" y="249" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#2c2c2c">₩4.1M</text>
+  <text x="144" y="249" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" fill="#ea4335">▼2.1%</text>
+  <text x="100" y="268" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#0f9d58" font-weight="700">데이터만 넣으면 자동 완성</text>
+  <text x="100" y="280" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#888">차트 포함 완성본 → 메일 발송</text>
+
+  <!-- Meeting notes -->
+  <rect x="220" y="184" width="160" height="116" rx="12" fill="#fff8f5" stroke="#4a90d9" stroke-width="1.5"/>
+  <rect x="220" y="184" width="160" height="26" rx="12" fill="#4a90d9" opacity="0.1"/>
+  <rect x="220" y="200" width="160" height="10" fill="#4a90d9" opacity="0.1"/>
+  <text x="300" y="200" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" font-weight="700" fill="#4a90d9">🎙️ 회의록 자동 정리</text>
+  <rect x="230" y="215" width="140" height="18" rx="4" fill="#e8f0fe"/>
+  <text x="238" y="224" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#4a90d9">✅ 결정사항</text>
+  <text x="238" y="235" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#5a5a5a">• Q1 예산 승인됨</text>
+  <text x="238" y="247" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#4a90d9">📋 액션아이템</text>
+  <text x="238" y="259" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#5a5a5a">• 김팀장: 기획서 작성 (3/10)</text>
+  <text x="238" y="271" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#5a5a5a">• 이대리: 견적 요청 (3/8)</text>
+  <text x="300" y="289" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#4a90d9">녹음 → 10초 → 완성본</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Background -->
+  <rect width="400" height="320" rx="16" fill="#fdf6ee"/>
+
+  <!-- Camera body -->
+  <rect x="120" y="80" width="160" height="110" rx="16" fill="#2c2c2c"/>
+  <rect x="130" y="70" width="60" height="20" rx="6" fill="#2c2c2c"/>
+  <!-- Lens -->
+  <circle cx="200" cy="135" r="38" fill="#1a1a2e" stroke="#d4622b" stroke-width="3"/>
+  <circle cx="200" cy="135" r="28" fill="#252540" stroke="#888" stroke-width="1"/>
+  <circle cx="200" cy="135" r="18" fill="#1e1e38"/>
+  <circle cx="200" cy="135" r="10" fill="#3030a0" opacity="0.8"/>
+  <circle cx="205" cy="130" r="4" fill="white" opacity="0.3"/>
+  <!-- Record button -->
+  <circle cx="260" cy="90" r="8" fill="#ff4444"/>
+  <!-- Flash -->
+  <rect x="232" y="74" width="16" height="10" rx="3" fill="#febc2e"/>
+
+  <!-- AI Sparkles from camera -->
+  <circle cx="310" cy="100" r="4" fill="#d4622b" opacity="0.8"/>
+  <circle cx="326" cy="85" r="3" fill="#e8864a" opacity="0.6"/>
+  <circle cx="318" cy="118" r="2.5" fill="#d4622b" opacity="0.5"/>
+  <path d="M305 95 L322 88" stroke="#d4622b" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+
+  <!-- SRT subtitle file card -->
+  <rect x="30" y="210" width="100" height="80" rx="10" fill="#fff8f5" stroke="#d4622b" stroke-width="1.5"/>
+  <rect x="30" y="210" width="100" height="24" rx="10" fill="#d4622b" opacity="0.15"/>
+  <rect x="30" y="224" width="100" height="10" rx="0" fill="#d4622b" opacity="0.15"/>
+  <text x="80" y="226" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9" fill="#d4622b">subtitles.srt</text>
+  <text x="80" y="246" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#5a5a5a">00:00:01</text>
+  <text x="80" y="258" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#2c2c2c">안녕하세요!</text>
+  <text x="80" y="270" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8" fill="#5a5a5a">00:00:03</text>
+  <text x="80" y="282" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#2c2c2c">오늘은...</text>
+
+  <!-- Arrow -->
+  <path d="M138 248 L170 248" stroke="#d4622b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M166 243 L172 248 L166 253" stroke="#d4622b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="154" y="240" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#d4622b">자동</text>
+
+  <!-- Thumbnail grid -->
+  <rect x="178" y="210" width="90" height="80" rx="10" fill="#fff8f5" stroke="#d4622b" stroke-width="1.5"/>
+  <text x="223" y="228" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" font-weight="700" fill="#d4622b">썸네일 배치</text>
+  <rect x="186" y="232" width="34" height="24" rx="4" fill="#f0ddd0"/>
+  <rect x="226" y="232" width="34" height="24" rx="4" fill="#f0ddd0"/>
+  <rect x="186" y="260" width="34" height="24" rx="4" fill="#f0ddd0"/>
+  <rect x="226" y="260" width="34" height="24" rx="4" fill="#f0ddd0"/>
+  <text x="203" y="248" text-anchor="middle" font-size="12">🖼️</text>
+  <text x="243" y="248" text-anchor="middle" font-size="12">🖼️</text>
+  <text x="203" y="276" text-anchor="middle" font-size="12">🖼️</text>
+  <text x="243" y="276" text-anchor="middle" font-size="12">🖼️</text>
+
+  <!-- Arrow -->
+  <path d="M276 248 L308 248" stroke="#d4622b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M304 243 L310 248 L304 253" stroke="#d4622b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="292" y="240" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#d4622b">자동</text>
+
+  <!-- Description file -->
+  <rect x="318" y="210" width="60" height="80" rx="10" fill="#fff8f5" stroke="#d4622b" stroke-width="1.5"/>
+  <text x="348" y="228" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" font-weight="700" fill="#d4622b">설명란</text>
+  <line x1="328" y1="238" x2="368" y2="238" stroke="#e0d0c0" stroke-width="1"/>
+  <line x1="328" y1="248" x2="368" y2="248" stroke="#e0d0c0" stroke-width="1"/>
+  <line x1="328" y1="258" x2="368" y2="258" stroke="#e0d0c0" stroke-width="1"/>
+  <line x1="328" y1="268" x2="368" y2="268" stroke="#e0d0c0" stroke-width="1"/>
+  <text x="348" y="282" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="7" fill="#888">#태그 포함</text>
+
+  <!-- Title top -->
+  <text x="200" y="22" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2c2c2c">🎬 유튜버 워크플로우 자동화</text>
+  <text x="200" y="40" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#888">편집에만 집중, 나머지는 Claude가</text>
+
+  <!-- Quote badge -->
+  <rect x="100" y="195" width="200" height="18" rx="6" fill="#d4622b" opacity="0.1"/>
+  <text x="200" y="207" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#d4622b">스크립트 → 자막 → 썸네일 → 설명란</text>
+</svg>

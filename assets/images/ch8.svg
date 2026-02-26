@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <!-- Background -->
+  <rect width="400" height="320" rx="16" fill="#fdf6ee"/>
+
+  <!-- Title -->
+  <text x="200" y="24" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2c2c2c">🚀 1인 창업자 비용 절감</text>
+
+  <!-- VS comparison: left (기존) -->
+  <rect x="18" y="38" width="170" height="200" rx="14" fill="#fdeaea" stroke="#e57373" stroke-width="1.5"/>
+  <rect x="18" y="38" width="170" height="34" rx="14" fill="#e57373" opacity="0.2"/>
+  <rect x="18" y="62" width="170" height="10" fill="#e57373" opacity="0.2"/>
+  <text x="103" y="60" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#c62828">❌ 기존 방식</text>
+
+  <!-- Cost items: before -->
+  <rect x="28" y="76" width="150" height="24" rx="6" fill="white" opacity="0.6"/>
+  <text x="36" y="86" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#c62828">랜딩페이지 외주</text>
+  <text x="170" y="86" text-anchor="end" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#c62828">150만원</text>
+  <text x="36" y="96" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">대기 2주</text>
+
+  <rect x="28" y="104" width="150" height="24" rx="6" fill="white" opacity="0.6"/>
+  <text x="36" y="114" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#c62828">챗봇 개발 외주</text>
+  <text x="170" y="114" text-anchor="end" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#c62828">300만원</text>
+  <text x="36" y="124" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">대기 3주</text>
+
+  <rect x="28" y="132" width="150" height="24" rx="6" fill="white" opacity="0.6"/>
+  <text x="36" y="142" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#c62828">대시보드 개발</text>
+  <text x="170" y="142" text-anchor="end" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#c62828">400만원</text>
+  <text x="36" y="152" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">대기 4주</text>
+
+  <line x1="28" y1="165" x2="170" y2="165" stroke="#e57373" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <text x="103" y="182" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" fill="#888">합계</text>
+  <text x="103" y="198" text-anchor="middle" font-family="'Fira Code', monospace" font-size="16" font-weight="700" fill="#c62828">850만원</text>
+  <text x="103" y="212" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#888">총 대기 9주</text>
+  <text x="103" y="228" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#c62828">수정 요청 → 추가 비용</text>
+
+  <!-- VS badge -->
+  <circle cx="200" cy="138" r="18" fill="#d4622b"/>
+  <text x="200" y="143" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="white">VS</text>
+
+  <!-- Right: Claude Code -->
+  <rect x="212" y="38" width="170" height="200" rx="14" fill="#e8f5e9" stroke="#28c840" stroke-width="1.5"/>
+  <rect x="212" y="38" width="170" height="34" rx="14" fill="#28c840" opacity="0.2"/>
+  <rect x="212" y="62" width="170" height="10" fill="#28c840" opacity="0.2"/>
+  <text x="297" y="60" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#2e7d32">✅ Claude Code</text>
+
+  <rect x="222" y="76" width="150" height="24" rx="6" fill="white" opacity="0.6"/>
+  <text x="230" y="86" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#2e7d32">랜딩페이지</text>
+  <text x="364" y="86" text-anchor="end" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#2e7d32">30분</text>
+  <text x="230" y="96" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">반응형 완성</text>
+
+  <rect x="222" y="104" width="150" height="24" rx="6" fill="white" opacity="0.6"/>
+  <text x="230" y="114" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#2e7d32">챗봇 개발</text>
+  <text x="364" y="114" text-anchor="end" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#2e7d32">1~2시간</text>
+  <text x="230" y="124" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">FAQ 연동 완성</text>
+
+  <rect x="222" y="132" width="150" height="24" rx="6" fill="white" opacity="0.6"/>
+  <text x="230" y="142" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#2e7d32">대시보드</text>
+  <text x="364" y="142" text-anchor="end" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#2e7d32">2~4시간</text>
+  <text x="230" y="152" font-family="'Noto Sans KR', sans-serif" font-size="8" fill="#888">데이터 연동 포함</text>
+
+  <line x1="222" y1="165" x2="364" y2="165" stroke="#28c840" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <text x="297" y="182" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="10" fill="#888">월 구독료</text>
+  <text x="297" y="198" text-anchor="middle" font-family="'Fira Code', monospace" font-size="16" font-weight="700" fill="#2e7d32">$100</text>
+  <text x="297" y="212" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#2e7d32">≈ 14만원 / 월</text>
+  <text x="297" y="228" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#2e7d32">수정? "바꿔줘" → 5분</text>
+
+  <!-- Bottom savings highlight -->
+  <rect x="18" y="250" width="364" height="58" rx="12" fill="#d4622b" opacity="0.1" stroke="#d4622b" stroke-width="1.5"/>
+  <text x="200" y="270" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="11" font-weight="700" fill="#d4622b">💰 연간 절감액</text>
+  <text x="200" y="288" text-anchor="middle" font-family="'Fira Code', monospace" font-size="15" font-weight="700" fill="#d4622b">2,200만원 이상</text>
+  <text x="200" y="302" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="9" fill="#888">개발자 없이, 사장님이 직접</text>
+</svg>
